@@ -1,0 +1,22 @@
+#include <conio.h>
+#include <iostream>
+using namespace std;
+
+int main()
+{
+        int a, b, sum; 
+        
+        cout << "Enter the first number" << endl;
+        cin >> a;
+        cout << "Enter the last number" << endl;
+        cin >> b;
+        
+        for ( int number = a; number <= b; number += a )
+        { 
+           sum += number; 
+        }
+        cout << "The sum of whole numbers "<< a <<" to "<< b <<" is " << sum << endl; 
+        
+        _getch ();
+        return 0;
+}

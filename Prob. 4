@@ -1,0 +1,42 @@
+#include<iostream>
+#include<conio.h>
+
+using namespace std;
+
+int main()
+{
+	float A, B, C;
+	
+	cout << "Enter the first number:" << endl;
+	cin >> A;
+	
+	cout << "Enter the second number:"<< endl;
+	cin >> B;
+	
+	cout << "Enter the third number:" << endl;
+	cin >> C;
+	
+	if (A>C && A>B)
+	{	
+	     cout << A << " is the largest number out of the three numbers." << endl;
+	}
+	else if (B>A && B>C)
+	{
+	     cout << B << " is the largest number out of the three numbers." << endl;
+	}
+	else if (C>A && C>B)
+	{
+	     cout << C << " is the largest number out of the three numbers." << endl;
+	}
+	else if (A==B && B==C && A==C)
+	{
+	     cout << "The three numbers are of equal value" << endl;
+    }
+	else
+	{
+	     cout << "repeat and make a correct input" << endl;
+    }
+	
+	_getch ();     
+	return 0;
+}

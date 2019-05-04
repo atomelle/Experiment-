@@ -1,0 +1,47 @@
+#include<conio.h>
+#include<string>
+#include<iostream>
+
+using namespace std;
+
+int main()
+{
+	float hours, A,B;
+	int z;
+	
+	cout << "Enter Customer's Subscription Package:'" << endl;
+	cout << "     1 = A" << endl;
+	cout << "     2 = B" << endl;
+    cout << "     3 = C" << endl;
+	cin >> z;
+	
+	cout << "Enter Hours used" << endl;
+	cin >> hours;
+		
+	A = ( hours * 20 ) + 995; 
+	B = ( hours * 10) + 1495;
+	
+	if (z==1)
+	{
+	   	cout << "Fee of " << A << " pesos per month. Additional Fees of P20 per hour have already been added" << endl;
+    }
+    
+	else if (z==2)
+	{
+	   	cout << "Fee of " << B << " pesos per month. Additional Fees of P10 per hour have already been added." << endl;
+    }
+    
+	else if (z==3)
+    {
+	        cout << "Package is P 1995 per month with unlimited access provided. No additional fees" << endl;
+    }
+	     else
+	    {
+	        cout << "Input is invalid. Please try again." << endl;
+		}
+		
+		
+	_getch ();        
+	return 0;
+	
+}

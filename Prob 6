@@ -1,0 +1,23 @@
+
+#include <iostream>
+#include <conio.h>
+
+using namespace std;
+
+int main()
+{
+    int n, f=2, s=3, next;
+    cout << "The next numbers that are in the Fibonacci sequence after 0 and 1 is: " << endl;
+    n=20;
+    
+    for(int x=0;x<n;x++)
+    {
+    	cout<<f<<", ";
+    	next=f+s;
+    	f=s;
+    	s=next;
+    }
+    
+    _getch();
+    return 0;
+}
